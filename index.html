@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div id="container">
+        <div id="left_box">
+            <h2>Products</h2>
+            <ul id="product_list">
+                <li id="product-1">Product-1 = 100
+                    <button class="remove_btn" onclick="removeFromCart(1)">-</button>
+                    <span class="quantity" id="quantity-1">0</span>
+                    <button class="add_btn" onclick="addToCart(1)">+</button>
+                </li>
+                <li id="product-2">Product-2 = 200
+                    <button class="remove_btn" onclick="removeFromCart(2)">-</button>
+                    <span class="quantity" id="quantity-2">0</span>
+                    <button class="add_btn" onclick="addToCart(2)">+</button>
+                </li>
+                <li id="product-3">Product-2 = 300
+                    <button class="remove_btn" onclick="removeFromCart(3)">-</button>
+                    <span class="quantity" id="quantity-3">0</span>
+                    <button class="add_btn" onclick="addToCart(3)">+</button>
+                </li>
+            </ul>
+        </div>
+        <div id="right_box">
+            <h2>Cart</h2>
+            <div id="cart">No products added to the cart</div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
